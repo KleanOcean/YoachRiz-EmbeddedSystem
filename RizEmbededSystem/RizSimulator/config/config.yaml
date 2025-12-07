@@ -1,0 +1,72 @@
+# RizSimulator Configuration File
+
+app:
+  name: RizSimulator
+  version: 1.0.0
+  language: zh-CN
+  theme: default
+
+devices:
+  default_count: 1
+  max_count: 20
+  name_prefix: "RIZ-"
+  mac_prefix: "AA:BB:CC:DD:"
+  auto_start: false
+
+bluetooth:
+  adapter: default
+  advertising_interval: 100  # ms
+  mtu_size: 247
+  connection_timeout: 10000  # ms
+
+  services:
+    - uuid: "4fafc201-1fb5-459e-8fcc-c5c9c331914b"
+      characteristics:
+        - uuid: "beb5483e-36e1-4688-b7f5-ea07361b26a8"
+          properties: [read, write, notify]
+        - uuid: "cba1d466-344c-4be3-ab3f-189f80dd7518"
+          properties: [read, notify]
+        - uuid: "e3223119-9445-4e96-a4a1-85358c4046a2"
+          properties: [read, notify]
+
+training:
+  reaction:
+    timeout: 5000  # ms
+    auto_switch: true
+  sequence:
+    loop: false
+    interval: 1000  # ms
+  rhythm:
+    bpm: 120
+    sync: true
+
+gui:
+  window:
+    width: 1400
+    height: 900
+    min_width: 1280
+    min_height: 720
+
+  device_widget:
+    width: 120
+    height: 150
+    led_size: 80
+
+  colors:
+    background: "#FFFFFF"
+    text: "#000000"
+    border: "#CCCCCC"
+
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: logs/rizsimulator.log
+  max_size: 10485760  # 10MB
+  backup_count: 5
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"
+
+performance:
+  max_cpu_usage: 25  # %
+  max_memory_usage: 500  # MB
+  response_timeout: 50  # ms
+  gui_fps: 60

@@ -1,0 +1,14 @@
+# OTA GUI 系统依赖
+
+# 蓝牙通信
+bleak>=0.21.0
+
+# GUI界面（tkinter通常已内置于Python）
+# 如果tkinter未安装，请根据系统安装：
+# Ubuntu/Debian: sudo apt-get install python3-tk
+# macOS: 通常已包含
+# Windows: 通常已包含
+
+# 可选依赖（用于增强功能）
+pyserial>=3.5  # 串口通信（可选）
+pillow>=10.0.0  # 图像处理（可选，用于图标）

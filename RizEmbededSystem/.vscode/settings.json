@@ -1,0 +1,21 @@
+{
+    "files.associations": {
+        "*.tcc": "cpp",
+        "unordered_map": "cpp",
+        "fstream": "cpp",
+        "istream": "cpp",
+        "ostream": "cpp",
+        "sstream": "cpp",
+        "cstring": "cpp",
+        "cmath": "cpp"
+    },
+    "idf.adapterTargetName": "esp32",
+    "idf.openOcdConfigs": [
+        "interface/ftdi/esp32_devkitj_v1.cfg",
+        "target/esp32.cfg"
+    ],
+    "idf.flashType": "JTAG",
+    "idf.port": "/dev/cu.wchusbserial54860091281",
+    "cmake.configureOnOpen": false,
+    "C_Cpp.errorSquiggles": "disabled"
+}
