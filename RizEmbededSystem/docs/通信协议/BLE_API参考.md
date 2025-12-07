@@ -1,6 +1,6 @@
-# Yoach 1 - BLE API 參考文件 (繁體中文)
+# Riz - BLE API 參考文件 (繁體中文)
 
-本文件詳細說明了用於與 Yoach 1 設備互動的低功耗藍牙 (BLE) 通訊協定。
+本文件詳細說明了用於與 Riz 設備互動的低功耗藍牙 (BLE) 通訊協定。
 
 **目標讀者：** 行動應用程式開發人員 (iOS/Android)、測試人員、韌體開發人員。
 
@@ -8,7 +8,7 @@
 
 ## 目錄
 
-- [Yoach 1 - BLE API 參考文件 (繁體中文)](#yoach-1---ble-api-參考文件-繁體中文)
+- [Riz - BLE API 參考文件 (繁體中文)](#yoach-1---ble-api-參考文件-繁體中文)
   - [目錄](#目錄)
   - [1. BLE 服務 (Service) 與特徵 (Characteristics)](#1-ble-服務-service-與特徵-characteristics)
   - [2. 設備名稱](#2-設備名稱)
@@ -26,7 +26,7 @@
 *(注意：請將 `SERVICE_UUID` 等佔位符替換為 `Global_VAR.h` 中定義的實際值)*
 
 *   **主要服務 UUID (Primary Service UUID):** `SERVICE_UUID`
-    *   目的：包含 Yoach 1 主要通訊所需的所有特徵。
+    *   目的：包含 Riz 主要通訊所需的所有特徵。
 *   **特徵 (Characteristics):**
     *   **主要指令/通知 (`CHARACTERISTIC_MSG_UUID`)**
         *   **屬性 (Properties):** `WRITE`, `NOTIFY`

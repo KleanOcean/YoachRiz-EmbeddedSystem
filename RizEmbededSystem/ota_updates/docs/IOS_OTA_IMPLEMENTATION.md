@@ -3,13 +3,13 @@
 **Version:** 1.0.0
 **Last Updated:** 2025-11-23
 **Platform:** iOS (V0_stable)
-**Firmware Compatibility:** Yoach 1 v0.1.0
+**Firmware Compatibility:** Riz v0.1.0
 
 ---
 
 ## Overview
 
-The YOICHI iOS app includes a complete Over-The-Air (OTA) firmware update system that allows users to wirelessly update the firmware on connected Yoach 1 devices (MINI and PRO models).
+The YOICHI iOS app includes a complete Over-The-Air (OTA) firmware update system that allows users to wirelessly update the firmware on connected Riz devices (MINI and PRO models).
 
 ---
 

@@ -1,6 +1,6 @@
-# Yoach 1 Firmware Upgrade Plan - v0.1.0
+# Riz Firmware Upgrade Plan - v0.1.0
 
-**Objective:** Refactor the Yoach 1 firmware to implement a more robust, maintainable, and efficient hybrid architecture, leveraging Layered Design, Event-Driven Communication via FreeRTOS primitives, a Finite State Machine (FSM) for core logic, and OOP principles.
+**Objective:** Refactor the Riz firmware to implement a more robust, maintainable, and efficient hybrid architecture, leveraging Layered Design, Event-Driven Communication via FreeRTOS primitives, a Finite State Machine (FSM) for core logic, and OOP principles.
 
 **Target Version:** 0.1.0
 
