@@ -634,11 +634,11 @@ void setup() {
     LOG_INFO(MODULE_MAIN, "Initializing system components");
 
 
-    if (!motors.begin(19, 21, 0x20, 25)) {
-        LOG_ERROR(MODULE_MAIN, "YMOTOR init failed (PCF8575 not detected)");
-    } else {
-        LOG_INFO(MODULE_MAIN, "YMOTOR ready");
-    }
+    // if (!motors.begin(19, 21, 0x20, 25)) {
+    //     LOG_ERROR(MODULE_MAIN, "YMOTOR init failed (PCF8575 not detected)");
+    // } else {
+    //     LOG_INFO(MODULE_MAIN, "YMOTOR ready");
+    // }
 
 
     pinMode(LED_BUILTIN, OUTPUT);
@@ -671,9 +671,9 @@ void setup() {
     // Create tasks and finish setup
     createTasks();
 
+
     // Initialize hardware components
     LIGHT.init(true);
-
     // Initialize TOF sensor
     LOG_INFO(MODULE_MAIN, "Initializing TF-Luna sensor");
     // if (!TOF_SENSOR.init()) {
